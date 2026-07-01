@@ -1,0 +1,23 @@
+# Core deep learning frameworks
+tensorflow-cpu==2.21.0
+torch==2.12.1
+torchvision==0.27.1
+
+# NOTE: if you hit a segfault when TensorFlow and PyTorch are both
+# imported in the same notebook (Comparative_Analysis / Land_Classification
+# notebooks), uninstall triton -- it is not needed for these notebooks
+# and its bundled JIT compiler conflicts with TensorFlow in some
+# CPU-only environments:
+#   pip uninstall triton -y
+
+# Data science / metrics / visualization
+numpy
+scikit-learn
+matplotlib
+pillow
+
+# Notebook tooling
+jupyter
+nbformat
+nbconvert
+ipykernel
